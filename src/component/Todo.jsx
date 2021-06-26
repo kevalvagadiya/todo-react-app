@@ -17,7 +17,7 @@ function Todo() {
   });
 
   const getData = () => {
-    axios("http://localhost:3500/get-task").then((res) =>
+    axios("https://todo-node-api-application.herokuapp.com/get-task").then((res) =>
       setState({
         ...state,
         item: res.data.data,
@@ -52,7 +52,7 @@ function Todo() {
         isCompleted: newItem.isCompleted,
       };
       await axios
-        .post("http://localhost:3500/add-task", data)
+        .post("https://todo-node-api-application.herokuapp.com/add-task", data)
         .then((res) => {})
         .catch((err) => {});
       await getData();
@@ -73,7 +73,7 @@ function Todo() {
     const filtterItem = state.item.filter((item) => item.key !== key);
     setState({ ...state, item: filtterItem });
     await axios
-      .delete(`http://localhost:3500/delete-task/${key}`)
+      .delete(`https://todo-node-api-application.herokuapp.com/delete-task/${key}`)
       .then((res) => {})
       .catch((err) => {});
   };
@@ -95,7 +95,7 @@ function Todo() {
     };
 
     await axios
-      .put("http://localhost:3500/update-task", data)
+      .put("https://todo-node-api-application.herokuapp.com/update-task", data)
       .then((res) => {})
       .catch((err) => {});
   };
@@ -124,7 +124,7 @@ function Todo() {
     };
 
     await axios
-      .put("http://localhost:3500/update-task", data)
+      .put("https://todo-node-api-application.herokuapp.com/update-task", data)
       .then((res) => {})
       .catch((err) => {});
   };
@@ -138,7 +138,7 @@ function Todo() {
     setState({ ...state, item: filtterItem });
 
     await axios
-      .post("http://localhost:3500/clear-selected-task", clearItems)
+      .post("https://todo-node-api-application.herokuapp.com/clear-selected-task", clearItems)
       .then((res) => {})
       .catch((err) => {});
   };
