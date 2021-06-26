@@ -1,0 +1,42 @@
+body {
+  background-color: #fcf8f3;
+}
+header form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.to-do-list {
+  background-color: #969090;
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 30px;
+}
+.txtbox {
+  margin: 20px;
+  border: 0;
+  height: 40px;
+  width: 360px;
+  padding: 5px auto;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.txtbox::placeholder {
+  cursor: pointer;
+}
+.txtbox:focus {
+  outline: none;
+}
+#to-do-form button {
+  border: 0;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  padding: 10px;
+  min-width: 90px;
+}
+#to-do-form button:focus {
+  outline: none;
+}

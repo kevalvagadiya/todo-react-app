@@ -1,0 +1,62 @@
+.list {
+  margin: 20px;
+}
+.list {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: auto;
+}
+.list p span {
+  float: right;
+  margin: 5px;
+  cursor: pointer;
+}
+.faicon {
+  margin: 50 px;
+}
+.inputText {
+  background: transparent;
+  border: none;
+  width: 385px;
+  margin: 5px;
+  padding: 0px;
+}
+.list p input:focus {
+  outline: none;
+}
+.chkbox {
+  margin: 5px;
+}
+.maindiv {
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.totalItem {
+  font-size: 15px;
+  margin: 5px;
+}
+.allbutton {
+  border: 0;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  min-width: 90px;
+}
+.allbutton:focus {
+  outline: none;
+}
+.allcheckbox {
+  margin-left: 25px;
+  width: 20px;
+  height: 20px;
+}
+.itemAndButton {
+  margin: 20px;
+}
